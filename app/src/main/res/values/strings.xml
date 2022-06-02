@@ -4,4 +4,5 @@
     <string name="titrebtn_ajout">Ajouter une entreprise</string>
     <string name="titrebtn_editer">Editer une entreprise</string>
     <string name="titrebtn_lister">Lister tous les entreprises</string>
+
 </resources>

@@ -18,9 +18,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ajouter une entreprise"
+        android:layout_marginTop="70dp"
+        android:background="#18FBD0"
         android:id="@+id/btn_Ajout"
         android:onClick="acces"
-        android:layout_marginTop="70dp"/>
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

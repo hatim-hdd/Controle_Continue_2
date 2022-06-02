@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Ajouter_main">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tapez votre Raison social.."
+        android:id="@+id/txtraison"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tapez votre Adresse.."
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtadresse"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tapez votre Capital.."
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtcapital"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:id="@+id/enregistrer"
+        android:layout_weight="1"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:id="@+id/Annuler"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
