@@ -42,11 +42,14 @@ public class MyDatabase extends SQLiteOpenHelper {
         cv.put(COL4,e.getCapitale());
         return db.insert(TABLE_NAME,null,cv);
     }
-    public static long update_entreprise(SQLiteDatabase sqLiteDatabase, entreprise e){
+    public static long update_entreprise(SQLiteDatabase db, entreprise e){
         ContentValues cv = new ContentValues();
         cv.put(COL2,e.getRaison_sociale());
         cv.put(COL3,e.getAdresse());
         cv.put(COL4,e.getCapitale());
-        return sqLiteDatabase.update(TABLE_NAME,cv,"id="+e.getId(),null);
+        return db.update(TABLE_NAME,cv,"id="+e.getId(),null);
+    }
+    public static long delete_entreprise(SQLiteDatabase db, int id){
+        return db.delete(TABLE_NAME,"id="+id,null);
     }
 }
