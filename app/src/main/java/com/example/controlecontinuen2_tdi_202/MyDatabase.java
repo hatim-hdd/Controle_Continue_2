@@ -72,4 +72,20 @@ public class MyDatabase extends SQLiteOpenHelper {
 
         return entreprises;
     }
+
+    public static entreprise getOneentreprise(SQLiteDatabase db, int id){
+        entreprise e = null;
+
+        Cursor cur = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE id = " + id,null);
+
+        if(cur.moveToNext()){
+            e = new entreprise();
+            e.setId(cur.getInt(0));
+            e.setRaison_sociale(cur.getString(1));
+            e.setAdresse(cur.getString(2));
+            e.setCapitale(cur.getDouble(3));
+        }
+
+        return e;
+    }
 }
