@@ -73,7 +73,7 @@ public class MyDatabase extends SQLiteOpenHelper {
         return entreprises;
     }
 
-    public static entreprise getOneentreprise(SQLiteDatabase db, int id){
+    public static entreprise getOneEntreprise(SQLiteDatabase db, int id){
         entreprise e = null;
 
         Cursor cur = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE id = " + id,null);
