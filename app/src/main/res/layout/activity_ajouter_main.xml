@@ -36,11 +36,12 @@
         android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/Annuler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Annuler"
-            android:id="@+id/Annuler"
-            android:layout_weight="1"/>
+            android:onClick="retourne"/>
     </LinearLayout>
 
 </LinearLayout>
