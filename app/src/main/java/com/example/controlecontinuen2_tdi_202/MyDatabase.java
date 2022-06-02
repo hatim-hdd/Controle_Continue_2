@@ -1,5 +1,6 @@
 package com.example.controlecontinuen2_tdi_202;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -33,5 +34,12 @@ public class MyDatabase extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(sql);
         onCreate(sqLiteDatabase);
 
+    }
+    public static long add_entreprise(SQLiteDatabase db, entreprise e){
+        ContentValues ct = new ContentValues();
+        ct.put(COL2,e.getRaison_sociale());
+        ct.put(COL3,e.getAdresse());
+        ct.put(COL4,e.getCapitale());
+        return db.insert(TABLE_NAME,null,ct);
     }
 }
