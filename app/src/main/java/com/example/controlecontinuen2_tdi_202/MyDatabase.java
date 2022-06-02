@@ -36,10 +36,17 @@ public class MyDatabase extends SQLiteOpenHelper {
 
     }
     public static long add_entreprise(SQLiteDatabase db, entreprise e){
-        ContentValues ct = new ContentValues();
-        ct.put(COL2,e.getRaison_sociale());
-        ct.put(COL3,e.getAdresse());
-        ct.put(COL4,e.getCapitale());
-        return db.insert(TABLE_NAME,null,ct);
+        ContentValues cv = new ContentValues();
+        cv.put(COL2,e.getRaison_sociale());
+        cv.put(COL3,e.getAdresse());
+        cv.put(COL4,e.getCapitale());
+        return db.insert(TABLE_NAME,null,cv);
+    }
+    public static long update_entreprise(SQLiteDatabase sqLiteDatabase, entreprise e){
+        ContentValues cv = new ContentValues();
+        cv.put(COL2,e.getRaison_sociale());
+        cv.put(COL3,e.getAdresse());
+        cv.put(COL4,e.getCapitale());
+        return sqLiteDatabase.update(TABLE_NAME,cv,"id="+e.getId(),null);
     }
 }
