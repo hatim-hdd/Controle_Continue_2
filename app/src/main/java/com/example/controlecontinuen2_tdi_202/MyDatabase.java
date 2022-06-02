@@ -2,10 +2,13 @@ package com.example.controlecontinuen2_tdi_202;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import java.util.ArrayList;
 
 public class MyDatabase extends SQLiteOpenHelper {
 
@@ -51,5 +54,22 @@ public class MyDatabase extends SQLiteOpenHelper {
     }
     public static long delete_entreprise(SQLiteDatabase db, int id){
         return db.delete(TABLE_NAME,"id="+id,null);
+    }
+    public static ArrayList<entreprise> getAllEntreprise(SQLiteDatabase db){
+        ArrayList<entreprise> entreprises = new ArrayList<>();
+
+        Cursor cur = db.rawQuery("SELECT * FROM " + TABLE_NAME,null);
+
+        while(cur.moveToNext()){
+            entreprise e = new entreprise();
+            e.setId(cur.getInt(0));
+            e.setRaison_sociale(cur.getString(1));
+            e.setAdresse(cur.getString(2));
+            e.setCapitale(cur.getDouble(3));
+
+            entreprises.add(e);
+        }
+
+        return entreprises;
     }
 }

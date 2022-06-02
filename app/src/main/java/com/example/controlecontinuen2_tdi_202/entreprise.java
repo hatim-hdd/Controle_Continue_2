@@ -9,6 +9,10 @@ public class entreprise implements Serializable {
     private double capitale;
 
 
+    public  entreprise()
+    {
+
+    }
     public entreprise(int id, String raison_sociale, String adresse, double capitale) {
         this.id = id;
         this.raison_sociale = raison_sociale;
