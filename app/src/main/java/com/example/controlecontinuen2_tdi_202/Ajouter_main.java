@@ -22,7 +22,7 @@ public class Ajouter_main extends AppCompatActivity {
         e2 = findViewById(R.id.txt_adresse);
         e3 = findViewById(R.id.txt_capital);
     }
-    public void ajouterProduit(View view) {
+    public void ajouterentreprise(View view) {
 
         if(e1.getText().toString().isEmpty()){
             Toast.makeText(this, "raison sociale vide", Toast.LENGTH_SHORT).show();

@@ -33,7 +33,8 @@
         android:layout_height="wrap_content"
         android:text="Enregistrer"
         android:id="@+id/enregistrer"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:onClick="ajouterentreprise"/>
 
         <Button
             android:id="@+id/Annuler"
