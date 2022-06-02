@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ControleContinueN2_TDI_202">
         <activity
+            android:name=".aficher_main"
+            android:exported="false" />
+        <activity
+            android:name=".editer_main"
+            android:exported="false" />
+        <activity
+            android:name=".Ajouter_main"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
