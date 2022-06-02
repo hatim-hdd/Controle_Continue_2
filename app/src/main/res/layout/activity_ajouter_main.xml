@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tapez votre Raison social.."
-        android:id="@+id/txtraison"
+        android:id="@+id/txt_raison"
         android:layout_marginBottom="20dp"
         />
     <EditText
@@ -18,13 +18,13 @@
         android:layout_height="wrap_content"
         android:hint="Tapez votre Adresse.."
         android:layout_marginBottom="20dp"
-        android:id="@+id/txtadresse"/>
+        android:id="@+id/txt_adresse"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tapez votre Capital.."
         android:layout_marginBottom="20dp"
-        android:id="@+id/txtcapital"/>
+        android:id="@+id/txt_capital"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
