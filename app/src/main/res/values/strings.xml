@@ -6,6 +6,8 @@
     <string name="titrebtn_lister">Lister tous les entreprises</string>
     <string name="titrebtn_enregistre">Enregistrer</string>
     <string name="titrebtn_anuler">Annuler</string>
+    <string name="titrebtn_modifier">Modifier</string>
+    <string name="titrebtn_supprimer">Supprimer</string>
 
 
 </resources>
