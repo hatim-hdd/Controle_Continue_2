@@ -33,18 +33,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+             style="@style/btnmenu"
             android:text="Enregistrer"
             android:id="@+id/Modifierr"
-            android:layout_weight="1"/>
+            android:onClick="modifier"
+             />
 
         <Button
             android:id="@+id/Annuler"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+             style="@style/btnmenu"
             android:text="Supprimer"
+            android:onClick="supprimer"
             />
     </LinearLayout>
 
